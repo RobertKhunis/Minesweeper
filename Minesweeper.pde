@@ -154,7 +154,7 @@ public class MSButton
         } else if(mines.contains(this)){
          displayLosingMessage();
         } else if(countMines(myRow, myCol)>0){
-         myLabel = Integer.toString(countMines(myRow,myCol));
+         this.setLabel(countMines(myRow,myCol));
         } else {
           
         /*if(isValid(myRow, myCol-1) == true ){
