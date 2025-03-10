@@ -85,6 +85,7 @@ public void displayLosingMessage()
     for(int i = 0; i < mines.size(); i++){
     mines.get(i).clicked = true;
     }
+    redraw();
     noLoop();
 }
 public void displayWinningMessage()
