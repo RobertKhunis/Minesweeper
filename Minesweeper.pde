@@ -3,7 +3,7 @@ public final static int NUM_ROWS = 10;
 public final static int NUM_COLS = 10;
 private MSButton[][] buttons; //2d array of minesweeper buttons
 private ArrayList <MSButton> mines = new ArrayList <MSButton>(); //ArrayList of just the minesweeper buttons that are mined
-int theMines = NUM_ROWS * NUM_COLS*2/5;
+int theMines = NUM_ROWS * NUM_COLS/3;
 
 void setup ()
 {
@@ -58,7 +58,7 @@ public boolean isWon()
     for(int r = 0; r < NUM_ROWS; r++){
     for(int c = 0; c < NUM_COLS; c++){
     
-     if(buttons[r][c].clicked == true){
+     if(buttons[r][c].clicked == true && buttons[r][c].flagged == false){
      safeFound++;
      } 
       
