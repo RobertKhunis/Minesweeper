@@ -7,7 +7,7 @@ int theMines = NUM_ROWS * NUM_COLS/7;
 
 void setup ()
 {
-    size(400, 600);
+    size(400, 400);
     textAlign(CENTER,CENTER);
     
     // make the manager
